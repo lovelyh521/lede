@@ -13,9 +13,11 @@ on:
   #schedule:
    # - cron: 0 20 * * *
   push:
-    tags:
-      - '*'
-
+   # tags:
+    #  - '*'
+    branches: 
+      - master
+  
 jobs:
 
   build_openwrt:
